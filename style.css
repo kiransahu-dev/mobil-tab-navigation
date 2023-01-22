@@ -24,9 +24,9 @@ body
     width: 340px;
 }
 
-.phone content
+.phone .content
 {
-    opacity: 0;
+    /* opacity: 0; */
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -36,9 +36,12 @@ body
     transition: opacity 0.4s ease;
 }
 
-.content.show
+.hide{
+    opacity: 0;
+}
+.show
 {
-    opacity: 11;
+    opacity: 1;
 }
 
 nav
@@ -74,7 +77,10 @@ nav ul li p{
 }
 
 nav ul li:hover,
-nav ul li:active{
+nav ul li.active{
     color: #8e44ad;
 
 }
+/* nav ul li.active{
+    color: #8e44ad !important;
+} */
